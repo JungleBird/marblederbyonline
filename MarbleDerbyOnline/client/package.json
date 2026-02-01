@@ -8,7 +8,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "deploy": "npm run build && cd dist && echo '' > .nojekyll && git init && git add -A && git commit -m 'deploy' && git push -f git@github.com:junglebird/marblederbyonline.git main:gh-pages && cd .."
+    "deploy": "npm run build && cd dist && echo '' > .nojekyll && git init && git add -A && git commit -m 'deploy' && git branch -M gh-pages && git push -f git@github.com:junglebird/marblederbyonline.git gh-pages && cd .."
   },
   "dependencies": {
     "@react-three/drei": "^10.7.7",
