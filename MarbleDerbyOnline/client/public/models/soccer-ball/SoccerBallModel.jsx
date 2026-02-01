@@ -1,9 +1,10 @@
 import React, { useMemo, useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 import * as THREE from 'three'
+import soccerBallUrl from './scene.gltf?url'
 
 export function SoccerBallModel({ radius = 0.6, scale, ...props }) {
-  const { scene } = useGLTF(`${import.meta.env.BASE_URL}models/soccer-ball/scene.gltf`)
+  const { scene } = useGLTF(soccerBallUrl)
   const groupRef = useRef()
   const materialsRef = useRef([])
 
@@ -55,4 +56,4 @@ export function SoccerBallModel({ radius = 0.6, scale, ...props }) {
   return <primitive ref={groupRef} object={clone} {...props} />
 }
 
-useGLTF.preload(`${import.meta.env.BASE_URL}models/soccer-ball/scene.gltf`)
+useGLTF.preload(soccerBallUrl)

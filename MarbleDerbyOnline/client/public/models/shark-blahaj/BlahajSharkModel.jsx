@@ -1,8 +1,9 @@
 import React, { useMemo, useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
+import sharkUrl from './scene.gltf?url'
 
 export function BlahajShark({ scale = 1, ...props }) {
-  const { scene } = useGLTF(`${import.meta.env.BASE_URL}models/shark-blahaj/scene.gltf`)
+  const { scene } = useGLTF(sharkUrl)
   const groupRef = useRef()
   const materialsRef = useRef([])
 
@@ -40,4 +41,4 @@ export function BlahajShark({ scale = 1, ...props }) {
   return <primitive ref={groupRef} object={clone} scale={scale} {...props} />
 }
 
-useGLTF.preload(`${import.meta.env.BASE_URL}models/shark-blahaj/scene.gltf`)
+useGLTF.preload(sharkUrl)
