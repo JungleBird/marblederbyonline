@@ -32,16 +32,16 @@ jobs:
         with:
           node-version: '20'
           cache: 'npm'
-          cache-dependency-path: ./client/package-lock.json
+          cache-dependency-path: ./MarbleDerbyOnline/client/package-lock.json
           
       - name: Install dependencies
         run: |
-          cd client
+          cd MarbleDerbyOnline/client
           npm ci
           
       - name: Build
         run: |
-          cd client
+          cd MarbleDerbyOnline/client
           npm run build
           
       - name: Setup Pages
@@ -50,7 +50,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./client/dist
+          path: ./MarbleDerbyOnline/client/dist
           
   deploy:
     environment:
