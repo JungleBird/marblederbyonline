@@ -11,7 +11,7 @@ import { SocketProvider } from "./providers/SocketProvider";
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <SocketProvider>
-      <BrowserRouter>
+      <BrowserRouter basename="/marblederbyonline">
         <Routes>
           <Route path="/login" element={<LoginPage />} />
           <Route path="/football" element={<MarbleFootBall />} />
