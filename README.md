@@ -7,6 +7,8 @@ Marbles are versatile, and this kind of marble environment can have many applica
 
 Demo: https://junglebird.github.io/marblederbyonline/
 
+Controls: WASD or Arrow keys for movement. Spacebar for jumping. 'R' to reset to initial position.
+
 Screenshots:
 <img width="2504" height="1303" alt="Screenshot 2026-01-20 171603" src="https://github.com/user-attachments/assets/179a43c8-bc8d-454b-a3da-f20dba08a239" />
 
