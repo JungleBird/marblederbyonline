@@ -1,9 +1,9 @@
 This is a project I started to learn how to use open-source javascript libraries (three.js, react-three/fiber) to create a real-time multi-player game environment. 
-Creating this has been a big learning experience; unlike a typical end-user application, this kind of multiplayer project requires a lot of networking code to syncronize many parallel, simultaneous player states.
+Creating this has been a big learning experience; unlike a typical end-user applications, this kind of multiplayer project requires a lot of networking code to syncronize many parallel, simultaneous player states.
 This game uses a purely javascript stack (React/Node.js) to handle the logic and communication between the client and server.
 
 I wanted to give all the marble-enthusiasts of the world a place to settle down and roll around in, as there are many, many people who take up marble-ing as a hobby. 
-This kind of marble environment can have endless applications, from just having fun playing marble-soccer or creating and exploring an endless amount of possible worlds.
+Marbles are versatile, and this kind of marble environment can have many applications; such as playing marble-soccer or creating and exploring different world environments.
 
 Demo: https://junglebird.github.io/marblederbyonline/
 
