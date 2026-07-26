@@ -3,6 +3,7 @@ import { createRoot } from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./index.css";
 import LoginPage from "./routes/LoginPage";
+import LandingPage from "./routes/LandingPage";
 import MarbleFootBall from "./games/MarbleFootBall";
 import MarbleDropMaze from "./games/MarbleDropMaze";
 import SelectionPage from "./routes/SelectionPage";
@@ -14,6 +15,7 @@ createRoot(document.getElementById("root")).render(
       <BrowserRouter basename="/marblederbyonline">
         <Routes>
           <Route path="/login" element={<LoginPage />} />
+          <Route path="/landingpage" element={<LandingPage />} />
           <Route path="/football" element={<MarbleFootBall />} />
           <Route path="/playground" element={<MarbleDropMaze />} />
           <Route
